@@ -1,0 +1,63 @@
+/* cart-container styles */
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the cart container takes at least the full viewport height */
+  padding: 20px;
+  background-color: #f8f8f8; /* Light background for the whole cart area */
+  font-family: Arial, sans-serif; /* Basic font stack */
+}
+
+/* cart-content-container styles */
+.cart-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Space between heading, list, and summary */
+  max-width: 1200px; /* Max width for the content to prevent it from stretching too wide */
+  margin: 0 auto; /* Center the content container */
+  width: 100%; /* Take full width up to max-width */
+  padding: 20px;
+  background-color: #ffffff; /* White background for the main content block */
+  border-radius: 8px; /* Slightly rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* heading-and-remove-all styles */
+.heading-and-remove-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee; /* Separator line below the heading */
+  padding-bottom: 15px; /* Space below the line */
+}
+
+/* cart-heading styles */
+.cart-heading {
+  font-size: 2.5em; /* Larger heading for prominence */
+  color: #333;
+  margin: 0; /* Remove default margin from h1 */
+}
+
+/* remove-all-button-text styles */
+.remove-all-button-text {
+  background: none; /* No background */
+  border: none; /* No border */
+  color: #e53935; /* Red color for a destructive action */
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.remove-all-button-text:hover {
+  background-color: #fce4e4; /* Light red background on hover */
+  color: #c62828; /* Slightly darker red on hover */
+}
+
+.remove-all-button-text:active {
+  background-color: #ffcdd2; /* Even lighter red on click */
+}
