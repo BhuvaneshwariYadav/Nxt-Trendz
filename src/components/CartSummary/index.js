@@ -1,5 +1,5 @@
-// Write your code here
 import CartContext from '../../context/CartContext'
+import CheckoutPopUp from '../CheckoutPopUp'
 import './index.css'
 
 const CartSummary = () => (
@@ -16,9 +16,7 @@ const CartSummary = () => (
           <h1 className="order-total-heading">Order Total:</h1>
           <h1 className="order-total-amount">Rs {amt}/-</h1>
           <p className="items-in-cart-text">{count} Items in cart</p>
-          <button type="button" className="checkout-button">
-            Checkout
-          </button>
+          <CheckoutPopUp itemsCount={count} total={amt} />
         </div>
       )
     }}
